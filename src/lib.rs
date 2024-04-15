@@ -5,6 +5,7 @@ pub mod parcels;
 pub mod run;
 pub mod run_ui;
 pub mod state;
+pub mod table;
 pub mod utils;
 
 pub mod prelude {
@@ -15,6 +16,7 @@ pub mod prelude {
     pub use crate::run::run;
     pub use crate::run_ui::UiState;
     pub use crate::state::{EguiState, App, WgpuFrame};
+    pub use crate::table::{Columnar, Tabular, TableView};
     pub use crate::utils::{from_csv, point_bounds};
 }
 

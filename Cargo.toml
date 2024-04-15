@@ -13,10 +13,10 @@ name = "whimsy"
 [dependencies]
 bincode = "1.3.3"
 csv = "1.3.0"
-egui = "0.26.2"
-egui-wgpu = "0.26.2"
-egui-winit = "0.26.2"
-egui_dock = { version = "0.11.4", features = ["serde"] }
+egui = "0.27.2"
+egui-wgpu = "0.27.2"
+egui-winit = "0.27.2"
+egui_dock = { version = "0.12.0", features = ["serde"] }
 galileo = { git = "https://github.com/Maximkaaa/galileo" }
 galileo-types = { git = "https://github.com/Maximkaaa/galileo" }
 geo = "0.28.0"
@@ -36,3 +36,4 @@ tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
 wgpu = "0.19.3"
 winit = "0.29.15"
 itertools = "0.12.1"
+egui_extras = { version = "0.27.2", features = ["file", "chrono", "datepicker", "image"] }
