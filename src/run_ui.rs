@@ -34,8 +34,8 @@ impl UiState {
 
         let mut bea_panel = None;
         let mut bea_table = None;
-        let bea = match BeaData::from_csv("p:/bea_cainc5n.csv") {
-        // let bea = match BeaData::load("data/bea.data") {
+        // let bea = match BeaData::from_csv("p:/bea_cainc5n.csv") {
+        let bea = match BeaData::load("data/bea.data") {
             Ok(data) => {
                 bea_panel = Some(BeaPanel::new(&data));
                 bea_table = Some(TableView::new(data.clone()));
